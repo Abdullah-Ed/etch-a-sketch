@@ -9,4 +9,15 @@ function makeGrid(){
   }
 }
 
-makeGrid()
+makeGrid();
+
+const square = document.querySelectorAll(".square");
+function paintSquare(){
+  square.forEach(square => {
+    square.addEventListener("mouseover", event => {
+      event.target.style.backgroundColor = "black";
+    });
+  });
+};
+
+paintSquare();
