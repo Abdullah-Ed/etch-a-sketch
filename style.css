@@ -1,21 +1,28 @@
 body{
   padding: 0;
   margin: 0;
+  background-color: #e1af94;
+  text-align: center;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 480px;
-  border: 1px black solid;
+  width: 580px;
+  border: 1px #4d4c4c solid;
+  background-color: #ffeeee;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.square {
-  flex-basis: calc(100% / 16);
-  height: 0;
-  padding-bottom: calc(100% / 16);
-  box-sizing: border-box;
-
+h1{
+  font-size: 4rem;
 }
 
+button{
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #aab0f5;
+  margin:auto 1em 2em 1em ;
+  border-radius: 5px;
+}
