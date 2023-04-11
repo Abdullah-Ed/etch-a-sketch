@@ -28,8 +28,10 @@ function paintSquare(){
     });
   });
 };
+paintSquare()
 
-paintSquare();
+const blackBtn = document.querySelector(".black-button")
+blackBtn.addEventListener("click",paintSquare)
 
 
 function askNumber(){
@@ -44,3 +46,5 @@ function askNumber(){
 
 const resetBtn =  document.querySelector(".reset-button") 
 resetBtn.addEventListener("click",askNumber)
+
+
