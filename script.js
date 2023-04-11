@@ -48,3 +48,25 @@ const resetBtn =  document.querySelector(".reset-button")
 resetBtn.addEventListener("click",askNumber)
 
 
+function getRandomHex() {
+  const hexChars = '0123456789abcdef';
+  let result = '';
+  for (let i = 0; i < 6; i++) {
+    result += hexChars[Math.floor(Math.random() * hexChars.length)];
+  }
+  return '#' + result;
+}
+
+getRandomHex() 
+
+function paintRainbow() {
+  const square = document.querySelectorAll(".square");
+  square.forEach(square => {
+    square.addEventListener("mouseover", event => {
+      event.target.style.backgroundColor = getRandomHex();
+    });
+  });
+}
+
+const rainbowBtn = document.querySelector(".rainbow-button")
+rainbowBtn.addEventListener("click",paintRainbow)
