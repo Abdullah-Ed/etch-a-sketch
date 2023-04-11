@@ -1,4 +1,4 @@
-const container = document.querySelector(".container")
+const container = document.querySelector(".container");
 
 
 function makeGrid(numSquares) {
@@ -28,10 +28,10 @@ function paintSquare(){
     });
   });
 };
-paintSquare()
+paintSquare();
 
-const blackBtn = document.querySelector(".black-button")
-blackBtn.addEventListener("click",paintSquare)
+const blackBtn = document.querySelector(".black-button");
+blackBtn.addEventListener("click",paintSquare);
 
 
 function askNumber(){
@@ -57,7 +57,7 @@ function getRandomHex() {
   return '#' + result;
 }
 
-getRandomHex() 
+getRandomHex();
 
 function paintRainbow() {
   const square = document.querySelectorAll(".square");
@@ -66,7 +66,7 @@ function paintRainbow() {
       event.target.style.backgroundColor = getRandomHex();
     });
   });
-}
+};
 
-const rainbowBtn = document.querySelector(".rainbow-button")
-rainbowBtn.addEventListener("click",paintRainbow)
+const rainbowBtn = document.querySelector(".rainbow-button");
+rainbowBtn.addEventListener("click",paintRainbow);
